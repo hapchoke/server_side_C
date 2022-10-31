@@ -8,7 +8,7 @@
         WHERE i.genre_id = g.id  
         GROUP BY g.id;  
 ### 理由
-    まず、genres.nameとgenres.nameごとのitems.priceの平均値を求めたいので,selectで指定する。  
+    まず、genres.nameとgenres.idごとのitems.priceの平均値を求めたいので,selectで指定する。  
     表名はitems,genresなのでfromに指定。  
     itemsのgenre_idとgenresのidの共通部分で関連づけるためwhereを指定。  
     あとはgenre.idごとにitems.priceの平均を求めたいのgroup byで集約する。  
